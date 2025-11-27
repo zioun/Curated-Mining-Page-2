@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curated Mining - Institutional Bitcoin Mining Hosting & Colocation Services</title>
+    <meta name="description" content="Leverage Curated Mining's network of vetted hosting providers to secure scalable, SLA-backed facilities for institutional-scale mining operations. Independent, unbiased, and always on your side of the table.">
+    <meta name="keywords" content="bitcoin mining hosting, colocation services, institutional mining, hosting providers, data center, mining facilities, energy contracts, SLA">
+    <meta name="author" content="Curated Mining">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Curated Mining - Institutional Bitcoin Mining Hosting & Colocation Services">
+    <meta property="og:description" content="Trusted partnerships for scalable, SLA-backed mining facilities and hosting solutions">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://curatedmining.com/hosting-colocation">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Curated Mining - Institutional Bitcoin Mining Hosting & Colocation Services">
+    <meta name="twitter:description" content="Trusted partnerships for scalable, SLA-backed mining facilities and hosting solutions">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Root Variables */
+        :root {
+            --color-black: #000000;
+            --color-gold: #D4AF37;
+            --color-white: #FFFFFF;
+            --color-gray: #333333;
+            --font-headline: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            line-height: 1.6;
+            color: var(--color-white);
+            background-color: var(--color-black);
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1 {
+            font-family: var(--font-headline);
+            font-weight: 700;
+            font-size: clamp(40px, 5vw, 64px);
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-family: var(--font-headline);
+            font-weight: 700;
+            font-size: clamp(32px, 4vw, 48px);
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-family: var(--font-headline);
+            font-weight: 600;
+            font-size: clamp(24px, 3vw, 32px);
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        .subheadline {
+            font-size: clamp(16px, 2vw, 20px);
+            line-height: 1.5;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        p {
+            font-size: clamp(16px, 1.5vw, 18px);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 18px 36px;
+            font-family: var(--font-body);
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            border-radius: 0;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--color-gold);
+            color: var(--color-black);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-gold);
+            border: 1px solid var(--color-gold);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--color-gold);
+            color: var(--color-black);
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .header.visible {
+            transform: translateY(0);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-headline);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-gold);
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--color-black) 0%, #111111 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('/images/industrial_bitcoin_mining_facility_aerial_view.jpg') center/cover;
+            opacity: 0.15;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-dark {
+            background-color: var(--color-black);
+        }
+
+        .section-light {
+            background-color: var(--color-white);
+            color: var(--color-black);
+        }
+
+        .section-light h2,
+        .section-light h3 {
+            color: var(--color-black);
+        }
+
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .benefit-icon {
+            width: 24px;
+            height: 24px;
+            color: var(--color-gold);
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+        }
+
+        /* Facility Showcase */
+        .facility-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .facility-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .facility-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .facility-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .facility-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            padding: 2rem 1.5rem 1.5rem;
+            color: var(--color-white);
+        }
+
+        .facility-caption h4 {
+            font-family: var(--font-headline);
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--color-gold);
+        }
+
+        /* Hosting Options Table */
+        .hosting-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 3rem;
+            background: var(--color-white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .hosting-table th {
+            background-color: var(--color-black);
+            color: var(--color-gold);
+            padding: 1.5rem 1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .hosting-table td {
+            padding: 1.5rem 1rem;
+            border-bottom: 1px solid #eee;
+            color: var(--color-black);
+        }
+
+        .hosting-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .hosting-table .hosting-type {
+            font-weight: 600;
+            color: var(--color-black);
+        }
+
+        /* CTA Block */
+        .cta-block {
+            text-align: center;
+            background: linear-gradient(135deg, #111111 0%, var(--color-black) 100%);
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .testimonial-quote {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: var(--color-white);
+        }
+
+        .testimonial-quote::before {
+            content: '"';
+            color: var(--color-gold);
+            font-size: 2em;
+            font-style: normal;
+        }
+
+        .testimonial-quote::after {
+            content: '"';
+            color: var(--color-gold);
+            font-size: 2em;
+            font-style: normal;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--color-gold);
+        }
+
+        /* Conference Images */
+        .conference-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .conference-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Lead Capture with Background */
+        .lead-capture {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/industrial_bitcoin_mining_facility_warehouse_asic_racks.jpg') center/cover;
+            text-align: center;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* YouTube Section */
+        .youtube-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .youtube-video {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background: var(--color-gray);
+        }
+
+        .youtube-placeholder {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--color-gold);
+            font-size: 18px;
+            text-align: center;
+        }
+
+        /* Insights Grid */
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .insight-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .insight-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .insight-thumbnail {
+            width: 100%;
+            height: 200px;
+            background: var(--color-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-gold);
+        }
+
+        .insight-content {
+            padding: 1.5rem;
+        }
+
+        .insight-title {
+            font-family: var(--font-headline);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--color-white);
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            border-bottom: 1px solid var(--color-gray);
+            padding: 1.5rem 0;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 18px;
+            color: var(--color-white);
+            transition: color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            color: var(--color-gold);
+        }
+
+        .faq-question.active {
+            color: var(--color-gold);
+        }
+
+        .faq-toggle {
+            color: var(--color-gold);
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: var(--color-white);
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .faq-answer.active {
+            max-height: 200px;
+            padding-top: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--color-black);
+            border-top: 1px solid var(--color-gray);
+            padding: 3rem 0 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            color: var(--color-white);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--color-gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--color-gray);
+            padding-top: 2rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .delivery-grid,
+            .about-content,
+            .youtube-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hosting-table {
+                font-size: 14px;
+            }
+
+            .hosting-table th,
+            .hosting-table td {
+                padding: 1rem 0.5rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+        }
+
+        /* Icon Styles */
+        .icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Curated Mining</a>
+                <a href="#hero" class="btn btn-primary">Request Hosting Proposal</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Institutional-Grade Bitcoin Mining Hosting — Through Trusted Partnerships</h1>
+                    <p class="subheadline">Leverage Curated Mining's network of vetted hosting providers to secure scalable, SLA-backed facilities for institutional-scale mining operations. Independent, unbiased, and always on your side of the table.</p>
+                    <div class="hero-cta">
+                        <a href="#cta-block" class="btn btn-primary">Request Hosting Proposal</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/images/professional_bitcoin_mining_handbook_ebook_cover.jpg" alt="Hosting & Colocation Guide">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Partner for Hosting Decisions -->
+    <section id="why-partner" class="section section-light">
+        <div class="container">
+            <h2>Why Partner for Hosting Decisions</h2>
+            <p>Hosting is where most capital risk lives — energy contracts, SLAs, and counterparty reliability determine real returns. As your partner, we evaluate and negotiate hosting opportunities with our established network across North America and global energy markets.</p>
+            
+            <h3>What partnership unlocks:</h3>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <svg class="benefit-icon" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <div>
+                        <p><strong>Access to renewable + low-cost power markets</strong> with documented pricing history</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <svg class="benefit-icon" viewBox="0 0 24 24">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <div>
+                        <p><strong>SLA-backed uptime and operational accountability</strong></p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <svg class="benefit-icon" viewBox="0 0 24 24">
+                        <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                    <div>
+                        <p><strong>Secure, industrial-grade facilities</strong> with audited performance records</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <svg class="benefit-icon" viewBox="0 0 24 24">
+                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                    </svg>
+                    <div>
+                        <p><strong>On-site due diligence</strong> — arrange private site tours and independent facility checks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facility Showcase -->
+    <section id="facility-showcase" class="section section-dark">
+        <div class="container">
+            <h2>Trusted Data Center & Colocation Options</h2>
+            <p class="subheadline">(Photo carousel with captions)</p>
+            
+            <div class="facility-showcase">
+                <div class="facility-item">
+                    <img src="/images/industrial_bitcoin_mining_facility_asic_racks_warehouse.jpg" alt="Data Halls - Multi-MW capacity, redundant power feeds">
+                    <div class="facility-caption">
+                        <h4>Data Halls</h4>
+                        <p>Multi-MW capacity, redundant power feeds</p>
+                    </div>
+                </div>
+                <div class="facility-item">
+                    <img src="/images/industrial_hydro_cooling_bitcoin_mining_data_center.jpg" alt="Hydro Cooling - High-density efficiency, extended ASIC lifespan">
+                    <div class="facility-caption">
+                        <h4>Hydro Cooling</h4>
+                        <p>High-density efficiency, extended ASIC lifespan</p>
+                    </div>
+                </div>
+                <div class="facility-item">
+                    <img src="/images/industrial_bitcoin_mining_facility_aerial_view.jpg" alt="Security Perimeters - 24/7 surveillance, restricted access, insurance-backed">
+                    <div class="facility-caption">
+                        <h4>Security Perimeters</h4>
+                        <p>24/7 surveillance, restricted access, insurance-backed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hosting Options -->
+    <section id="hosting-options" class="section section-light">
+        <div class="container">
+            <h2>Hosting Options</h2>
+            <p class="subheadline">Side-by-side comparison of common hosting structures:</p>
+            
+            <table class="hosting-table">
+                <thead>
+                    <tr>
+                        <th>Hosting Type</th>
+                        <th>When It Fits</th>
+                        <th>Key Advantages</th>
+                        <th>Risks / Considerations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="hosting-type">Water-Cooled</td>
+                        <td>Hot climates, stable water supply, efficiency focus</td>
+                        <td>Efficient, compact</td>
+                        <td>More complex repair logistics</td>
+                    </tr>
+                    <tr>
+                        <td class="hosting-type">Air-Cooled</td>
+                        <td>Traditional setups, mid-large investors</td>
+                        <td>Simpler, proven, lower upfront</td>
+                        <td>Higher wear, energy intensity in hot climates</td>
+                    </tr>
+                    <tr>
+                        <td class="hosting-type">Containerized</td>
+                        <td>Rapid or remote deployments</td>
+                        <td>Portable, scalable</td>
+                        <td>Limited capacity, less durable</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p style="margin-top: 2rem; font-style: italic;"><strong>Note:</strong> All facilities vetted through on-the-ground diligence and SLA reviews.</p>
+        </div>
+    </section>
+
+    <!-- CTA Block -->
+    <section id="cta-block" class="section section-dark cta-block">
+        <div class="container">
+            <h2>Book a Facility Tour or Request a Customized Hosting Proposal</h2>
+            <p class="subheadline">Explore hosting options vetted through Curated Mining's network of trusted providers. Independent, unbiased, and structured for institutional capital.</p>
+            <a href="#facility-tours" class="btn btn-primary">Request Hosting Proposal</a>
+        </div>
+    </section>
+
+    <!-- Intelligence Brief Newsletter -->
+    <section id="intelligence-brief" class="section section-light">
+        <div class="container">
+            <h2>Exclusive Institutional-Grade Insights — Delivered Before the Market Moves</h2>
+            <p>Every month, Curated Mining publishes a confidential research brief on ROI drivers, hosting opportunities, energy markets, and regulatory risks. These are institutional perspectives — not retail hype.</p>
+            <div style="margin-top: 2rem;">
+                <a href="#newsletter" class="btn btn-secondary">Join the Intelligence Brief</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section section-dark">
+        <div class="container">
+            <h2>What Our Partners Say</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <p class="testimonial-quote">Diligence-first. No hype, just clarity.</p>
+                    <p class="testimonial-author">— Family Office CIO</p>
+                </div>
+                <div class="testimonial-item">
+                    <p class="testimonial-quote">Operational oversight that reduced real risk.</p>
+                    <p class="testimonial-author">— Private Investor</p>
+                </div>
+                <div class="testimonial-item">
+                    <p class="testimonial-quote">Independent, aligned, and professional. Exactly what we needed.</p>
+                    <p class="testimonial-author">— Institutional Fund Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- As Seen At -->
+    <section id="as-seen-at" class="section section-light">
+        <div class="container">
+            <h2>As Seen At</h2>
+            <p>Curated Mining regularly speaks at Bitcoin conferences worldwide, including:</p>
+            <ul style="margin: 1rem 0 2rem 2rem;">
+                <li>Bitcoin Daily</li>
+                <li>Bitcoin 2024</li>
+            </ul>
+            
+            <div class="conference-grid">
+                <div class="conference-item">
+                    <img src="/images/professional_speaker_bitcoin_2024_nashville_conference.jpg" alt="John Drew speaking at Bitcoin 2024 conference">
+                </div>
+                <div class="conference-item">
+                    <img src="/images/michael-saylor-bitcoin-2024-keynote-presentation-finance-speaker.jpg" alt="Matty Ice speaking at Bitcoin conference">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture - Facility Tours -->
+    <section id="facility-tours" class="section section-dark lead-capture">
+        <div class="container">
+            <h2>Request a Private Tour of a Mining Facility</h2>
+            <p class="subheadline">See institutional-grade mining in action. Tours available at vetted facilities across North America.</p>
+            <a href="#contact" class="btn btn-primary">Request a Facility Tour</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="section section-light">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Curated Mining is led by Matty Ice and John Drew, two veterans in the Bitcoin mining and institutional infrastructure space.</p>
+                    <p>Matty Ice brings over a decade of experience in multi-megawatt facility oversight, ASIC procurement, and ROI modeling.</p>
+                    <p>John Drew, through his leadership at Consensus Protocol, specializes in energy negotiations, governance frameworks, and investor protection.</p>
+                    <p>Together, they form a vendor-neutral partnership that aligns with high-net-worth investors and institutions to protect capital and deliver clarity.</p>
+                </div>
+                <div class="about-image">
+                    <img src="/images/curated_mining_leadership_3.webp" alt="Matty Ice and John Drew - Curated Mining Leadership">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Section -->
+    <section id="youtube" class="section section-dark">
+        <div class="container">
+            <h2>Institutional-Grade Insights in Video Form</h2>
+            <div class="youtube-content">
+                <div class="youtube-video">
+                    <div class="youtube-placeholder">
+                        [YouTube Video Embed]<br>
+                        Latest Episode Available
+                    </div>
+                </div>
+                <div class="youtube-description">
+                    <p>In this episode, Matty Ice explains how to evaluate hosting contracts and what investors should watch for in 2025.</p>
+                    <div style="margin-top: 2rem;">
+                        <a href="#youtube-channel" class="btn btn-secondary">Explore Our Channel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Latest Insights -->
+    <section id="insights" class="section section-light">
+        <div class="container">
+            <h2>Latest Insights</h2>
+            
+            <div class="insights-grid">
+                <div class="insight-item">
+                    <div class="insight-thumbnail">
+                        [Blog Thumbnail]
+                    </div>
+                    <div class="insight-content">
+                        <h4 class="insight-title">Evaluating Hosting Contracts: A 2025 Guide</h4>
+                        <p>Key metrics and red flags to watch for when selecting institutional hosting partners.</p>
+                    </div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-thumbnail">
+                        [Blog Thumbnail]
+                    </div>
+                    <div class="insight-content">
+                        <h4 class="insight-title">Energy Market Analysis: Q4 2024</h4>
+                        <p>Renewable energy trends and their impact on mining hosting economics.</p>
+                    </div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-thumbnail">
+                        [Blog Thumbnail]
+                    </div>
+                    <div class="insight-content">
+                        <h4 class="insight-title">Colocation vs. Self-Hosted: ROI Comparison</h4>
+                        <p>When to choose hosted solutions versus building your own facility infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#all-insights" class="btn btn-secondary">Read All Insights</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section section-dark">
+        <div class="container">
+            <h2>FAQ — Institutional Hosting Partnerships</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Why not go directly to a hosting company?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Hosting providers profit by filling racks, not by protecting investor capital. We partner with you to negotiate terms, audit facilities, and hold hosts accountable through SLAs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I know if a hosting facility is reliable?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Reliability is measured through uptime history, repair queue transparency, energy contract stability, and counterparty solvency. We conduct due diligence using financial records, site inspections, and operational audits to ensure facilities meet institutional standards.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Can I tour facilities before committing?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. We can arrange private site tours at vetted facilities, allowing you to inspect infrastructure, cooling systems, and security protocols before signing any contracts.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What scale of operations can hosting partners handle?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Facilities in our network accommodate projects from a few megawatts up to 100MW+ institutional deployments. Containerized solutions are available for more flexible fleet structures.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Are renewable power options available?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Many vetted hosts operate in regions with abundant renewable energy — hydro, wind, or solar — ensuring both sustainability and cost efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <a href="#hosting-options">Hosting & Colocation</a>
+                    <a href="#roi-modeling">ROI Modeling</a>
+                    <a href="#facility-tours">Facility Tours</a>
+                    <a href="#due-diligence">Due Diligence</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#insights">Latest Insights</a>
+                    <a href="#intelligence-brief">Intelligence Brief</a>
+                    <a href="#youtube">Video Content</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="#linkedin">LinkedIn</a>
+                    <a href="#twitter">Twitter</a>
+                    <a href="#youtube-channel">YouTube</a>
+                    <a href="#newsletter">Newsletter</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Curated Mining. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header visibility on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('visible');
+            } else {
+                header.classList.remove('visible');
+            }
+        });
+
+        // FAQ Toggle functionality
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const isActive = element.classList.contains('active');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-question').forEach(q => {
+                q.classList.remove('active');
+                q.nextElementSibling.classList.remove('active');
+            });
+            
+            // Toggle current FAQ
+            if (!isActive) {
+                element.classList.add('active');
+                answer.classList.add('active');
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
